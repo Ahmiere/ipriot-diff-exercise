@@ -50,25 +50,25 @@ This is a repo to help you practice diffing!
 
 Fill in what each of the elements of the diff mean (if you are not sure just guess!):
 **①**:
-> Insert your explanation here
+> This element consists of the actual "diff" command being used, declaring what 'a' and 'b' will be so that it can properly put into the equation
 
 **②**:
-> Insert your answer here
+> This element is showing the index in which the changes made to a particular file is saved in. Included in that same line is the saved changes index' object ID, or its hash, which is used to help the computer to show that this file is different
 
 **③**:
-> Insert your explanation here
+> This element is clearly stating which file is which, the '--- a/README.md' file is the original, this can be safely recognised by the use of the first letter of the alphabet which suggests that the file marked with the 'a/' would have been the first file and the other file '+++ b/README.md' is the new file, this can be assumed because for starters the use of the '+' usually means addition and if a file has had an addition to its content made then it would have to be the latest version of that file, and since 'b' is the next letter in the alphabet its safe to assume the letters have significance in identifying the old and new file differences.
 
 **④**:
-> Insert your answer here
+> This element in between the 4 '@' shows that '8' and '9' has had content removed on those lines and shows that changes have been added to lines '8' and '12'
 
 **⑤**:
-> Insert your answer here
+> This element is stating the first step of a list of instructions, and based on the lack of either '+' or '-' symbols it is likely that this line is the same for both files.
 
 **⑥**:
-> Insert your explanation here
+> This element is showing the previous version of the second step on line 8 of the file, this can be assumed due to the '-' symbol which symbolises the previous/original version of the file. Below it there is the content that was added which can be identified by the '+' symbol positioned at the beginning of the line.
 
 **⑦**:
-> Insert your answer here
+> This element shows the previous/original end text in the file which was on line 9. The '-' symbol positioned at the begining of the line tells us that this line has most likely been completely removed and replaced by the text underneath it which has a '+' positioned at the start of its line
 
 
 Notice that the diff above only showed different **lines** in the file. Including whitespaces. We can also highlight changes at the word level with the --word-diff option:
